@@ -1,4 +1,4 @@
-package com.example.praciceapplication;
+package com.example.practiceapplication;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

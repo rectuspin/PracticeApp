@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.example.praciceapplication.FirstFragment"
+        android:name="com.example.practiceapplication.FirstFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first">
 
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.example.praciceapplication.SecondFragment"
+        android:name="com.example.practiceapplication.SecondFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_second">
 
@@ -27,7 +27,7 @@
     </fragment>
     <fragment
         android:id="@+id/First2Fragment"
-        android:name="com.example.praciceapplication.First2Fragment"
+        android:name="com.example.practiceapplication.First2Fragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first2">
 
@@ -37,7 +37,7 @@
     </fragment>
     <fragment
         android:id="@+id/Second2Fragment"
-        android:name="com.example.praciceapplication.Second2Fragment"
+        android:name="com.example.practiceapplication.Second2Fragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_second2">
 
