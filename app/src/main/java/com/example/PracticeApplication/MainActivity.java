@@ -1,4 +1,4 @@
-package com.example.practiceapplication;
+package com.example.PracticeApplication;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -124,8 +126,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         FirebaseUser currentUser=mAuth.getCurrentUser();
+        GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(this);
+
         if(currentUser!=null)
             userinfo.setText(currentUser.getDisplayName());
+        // Check for existing Google Sign In account, if the user is already signed in
+        // the GoogleSignInAccount will be non-null.
+        else if(account!=null)
+            userinfo.setText(account.getDisplayName());
+
     }
 
 
@@ -142,6 +151,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         readingView.setText(getTextFile());
+        FirebaseUser currentUser=mAuth.getCurrentUser();
+
+        if(currentUser!=null)
+            userinfo.setText(currentUser.getUid());
     }
 //    onResume ends/////
 

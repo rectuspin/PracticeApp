@@ -10,14 +10,14 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/Theme.PraciceApplication.AppBarOverlay">
+        android:theme="@style/Theme.PracticeApplication.AppBarOverlay">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            app:popupTheme="@style/Theme.PraciceApplication.PopupOverlay" />
+            app:popupTheme="@style/Theme.PracticeApplication.PopupOverlay" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -61,10 +61,17 @@
         android:layout_marginTop="20dp"
         android:layout_marginLeft="100dp"
         />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
     <TextView
         android:id="@+id/display_text"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="Google account"
          />
 
 </LinearLayout>

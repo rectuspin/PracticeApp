@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.practiceapplication">
+    package="com.example.PracticeApplication">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -10,18 +10,18 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.PraciceApplication"
+        android:theme="@style/Theme.PracticeApplication"
         android:usesCleartextTraffic="true">
         <activity
-            android:name="com.example.practiceapplication.AuthenticationActivity"
+            android:name="com.example.PracticeApplication.AuthenticationActivity"
             android:label="@string/title_activity_authentication"
-            android:theme="@style/Theme.PraciceApplication.NoActionBar"></activity>
-        <activity android:name="com.example.practiceapplication.ThirdActivity" />
-        <activity android:name="com.example.practiceapplication.SecondActivity" /> <!-- first activity==MainActivity -->
+            android:theme="@style/Theme.PracticeApplication.NoActionBar"></activity>
+        <activity android:name="com.example.PracticeApplication.ThirdActivity" />
+        <activity android:name="com.example.PracticeApplication.SecondActivity" /> <!-- first activity==MainActivity -->
         <activity
-            android:name="com.example.practiceapplication.MainActivity"
+            android:name="com.example.PracticeApplication.MainActivity"
             android:label="@string/title_activity_main2"
-            android:theme="@style/Theme.PraciceApplication.NoActionBar">
+            android:theme="@style/Theme.PracticeApplication.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
